@@ -1,0 +1,83 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    
+body {
+  background-color: #181818;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.clock-widget {
+  background: linear-gradient(145deg, #0b1727, #1b3354);
+  color: #fff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+  text-align: center;
+  width: 300px;
+  position: relative;
+  transition: transform 0.3s ease, background 0.3s ease;
+
+}
+
+.clock-widget:hover {
+  transform: scale(1.05);
+  background: linear-gradient(145deg, #1b3354, #283d6b);
+  box-shadow: 0px 15px 25px rgba(0,0,0,0.6);
+}
+
+.time {
+  font-size: 36px;
+  font-weight: bold;
+
+}
+
+.date {
+  font-size: 14px;
+  margin-top: 8px;
+}
+
+.icon {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+}
+
+.icon img {
+  width: 24px;
+  height: 24px;
+}
+
+#hours, #minutes {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+</style>
+  <title>Clock Widget</title>
+</head>
+<body>
+  
+  <div class="clock-widget">
+    <div class="time">
+      <span id="hours">11</span>: <span id="minutes">11</span> <span id="period">PM</span>
+    </div>
+
+    <div class="date">
+      <span id="day">Wednesday</span>, <span id="month">June</span> <span id="date">15th</span>
+    </div>
+
+    <div class="icon">
+      <img src="images.jpeg" alt="">
+    </div>
+  </div>
+</body>
+</html>
